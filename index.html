@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+  <title>Приклад 1</title>
+  <style>
+        .greeting {
+        text-align: center;
+        color: blue;
+        }
+  </style>
+</head>
+
+<body>
+  <div id="root"></div>
+    <script src="https://unpkg.com/react@16/umd/react.production.min.js"
+    crossorigin></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"
+    crossorigin></script>
+    <script>
+     class Rectangle {
+          constructor(width, height, color) {
+          this.width = width;
+          this.height = height;
+          this.color = color;
+        }
+        getArea() {
+          return this.width * this.height;
+        }
+      }
+      
+      let myRectangle1 = new Rectangle(5, 3, 'blue');
+      let myRectangle2 = new Rectangle(10, 5, 'red');
+      
+      console.log(myRectangle1.getArea()); //15
+      console.log(myRectangle2.getArea());
+
+      document.getArea("result").innerHTML = "Hello!!"; 
+    </script>
+  </body>
+</html>
